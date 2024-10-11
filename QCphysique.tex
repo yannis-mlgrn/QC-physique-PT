@@ -1,0 +1,205 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{enumitem} % Pour personnaliser les listes
+\usepackage{environ}  % Pour créer des environnements personnalisés
+\usepackage{ifthen}   % Pour les conditions
+\usepackage[top=2cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+% Définir une condition pour afficher ou non les solutions
+\newboolean{showsolutions}
+\setboolean{showsolutions}{True} % Mettre true pour afficher les solutions
+
+% Définir un environnement pour les solutions
+\NewEnviron{solution}{
+    \ifthenelse{\boolean{showsolutions}}{
+        \noindent\textbf{Solution :} 
+        \BODY
+    }{}
+}
+
+\title{Formulaire et questions de cours en physique-chimie PT}
+\author{Yannis}
+\date{\today}
+\begin{document}
+\maketitle
+\newpage
+
+\section*{\centering\huge Partie B : Electronique et electromagnétisme}
+\section*{\centering Chapitre B4 : Le champ magnétostatique}
+\begin{enumerate}[label=\arabic{enumi} - , left=0pt, itemsep=1em] % Personnalisation de la numérotation
+    \item Donner le ou les type(s) de sources possible pour un champ magnétostatique. \par
+    \begin{solution}
+        \begin{itemize}
+            \item Aimants
+            \item Courrants
+        \end{itemize}
+    \end{solution}
+
+    \item Définition du courrant.\par
+    \begin{solution}
+        déplacement de charges électriques.
+    \end{solution}
+
+    \item Expression du courrant i en fonction de la charge électrique.\par
+    \begin{solution}
+        \[ i(t) = \frac{dq(t)}{dt} \]
+    \end{solution}
+
+
+    \item Expression du vecteur densité volumique de courrant en fonction de la densité volumique de courrant.\par
+    \begin{solution}
+        \[ \vec{j} = \rho \times \vec{v} \]
+    \end{solution}
+
+    \item Expression du vecteur densité volumique de courrant en fonction de la charge en P, de la vitesse et de la densité du porteur de charge.\par
+    \begin{solution}
+         \[ \vec{j} = n q_p \vec{v} \]
+    \end{solution}
+
+    \item Expression du vecteur densité volumique de courrant pour plusieurs types de porteurs de charges.\par
+    \begin{solution}
+         \[ \vec{j} = \sum n_i q_i\vec{v_i} = \sum \rho_i\vec{v_i} \]
+    \end{solution}
+
+    \item Unité du vecteur densité volumique de courrant.\par
+    \begin{solution}
+         \[ A.m^{-2} \]
+    \end{solution}
+
+    \item Donner la formule qui relie le courrant i et la densité volumique de courrant.\par
+    \begin{solution}
+         \[ \int_S \vec{s} \cdot \vec{ds} \]
+    \end{solution}
+
+    \item Quelle est la direction du champ magnétique en un point A appartenant à un plan de symétrie de la distribution de courrant  \par
+    \begin{solution}
+         \[ \vec{B(A)} \perp \pi_S \]
+    \end{solution}
+
+
+    \item Quelle est la propriété fondamentale liée au flux du vecteur du champ magnétostatique?\par 
+    \begin{solution}
+         \[ \oint_S \vec{B}(M) \cdot \vec{ds} = \vec{0} \]
+    \end{solution}
+
+    \item Donner la formule de la circulation de $\vec{B}$ le long du contour fermé orienté $\Gamma$\par
+    \begin{solution}
+         \[ \mathscr{C}(\vec{B}) = \oint_S \vec{B}(M) \cdot \vec{dOM} \]
+    \end{solution}
+
+    \item Donner la définition de $i_{\text{enlacés}}$ \par
+    \begin{solution}
+         Courrant enlacé par le contour fermé orienté $\Gamma$
+    \end{solution}
+
+    \item Énoncer Le théorème d'Ampère \par
+    \begin{solution}
+         \[ \mathscr{C}(\vec{B}) = \nu_0 \times (i_{\text{enlacés}})\]
+    \end{solution}
+    
+    \item Donner l'expression du champ magnétostatique à l'interieur d'un solénoïde infini.\par
+    \begin{solution}
+         \[ \vec{B(M)} = \nu_0 n i . \vec{u_z}\] n : nombre de spire du solénoïde
+    \end{solution}
+
+    \item Donner l'expression du champ magnétostatique à l'exterieur d'un cylindre infini.\par
+    \begin{solution}
+         \[ \vec{B(M)} = \frac{\nu_0 I}{2 \pi r} . \vec{u_{\theta}}\] I : courrants enlacés
+    \end{solution}
+
+    \item  $\textbf{Démonstration :}$ Etablir l’expression du champ magnétostatique généré en tout point de l’espace par un
+    cylindre infini, de rayon R, parcouru par un courant de densité volumique uniforme.\par
+    \begin{solution}
+         Méthode d'ampère, Voir démo V.2
+
+    \end{solution}
+
+
+    \item $\textbf{Démonstration :}$ Etablir l’expression du champ magnétostatique généré en tout point de l’espace par un
+    solénoïde infini parcouru par un courant i.\par
+    \begin{solution}
+         Méthode d'ampère, Voir démo V.3
+
+    \end{solution}
+
+\section*{\centering\huge Partie C : Thermodynamique et mécanique des fluides appliquées aux machines thermiques}
+
+\section*{\centering Chapitre C1 : Statique des fluides}
+    \item Donner la définition d'une particule de fluide. \par
+    \begin{solution}
+     Une particule de fluide est un système fermé constitué par la masse $\delta_M$ de fluide de volume mésoscopique $d\tau$
+    \end{solution}
+
+    \item Donner la définition de la statique des fluides. \par
+    \begin{solution}
+     La statique des fluides, c'est l'étude de l'équilibre des particules de fluides 
+    \end{solution}
+
+    \item Donner La définition et l'expression de la force surfacique qui s'exerce sur la surface de la particule de fluide en M. \par
+    \begin{solution}
+     les forces surfaciques sont les forces qui s'exercent sur la surface de la particule de fluide
+          \[ \overrightarrow{dF}_{fluide-int \to fluide-ext} = P(M) \vec{dS}\]
+         
+          \begin{itemize}
+               \tiny\item   P : pression en Pa
+               \tiny\item   P(M) : champ scalaire positif
+           \end{itemize}  
+     \end{solution}
+
+     \item $\textbf{Démonstration :}$ Etablir la relation fondamentale de la statique des fluides.\par
+           \begin{solution}
+               Voir démo II.1, \[ \frac{dP}{dz}=-\rho g \]
+       
+           \end{solution}
+     
+     \item Donner la valeur de la masse molaire de l'air\par
+           \begin{solution}
+               \[ M_{air} = 29 g.mol^{-1} \]
+       
+           \end{solution}
+     
+    \item Donner la définition de la poussée d'archimède. \par
+    \begin{solution}
+        La poussée d'archimède est la résultante des forces de pression qui s'exercent sur toutes les surfaces du solide 
+     \end{solution}
+
+     \item Donner l'expression de la poussée d'archimède. \par
+     \begin{solution}
+         \[ \vec{\pi_A} = -\oint_{M \in S} P(M) \cdot \vec{dS} \]
+         \begin{itemize}
+          \tiny\item   S : surface de l'objet
+          \tiny\item   $\vec{dS}$ : orienté par la normale sortante
+      \end{itemize}  
+      \end{solution}
+
+      \item Enoncer et donner l'expression du théorème d'archimède. \par
+      \begin{solution}
+          La poussée d'archimède est égale à l'opposé du poid du fluide déplacé
+          \[\vec{\pi_A} = - \overrightarrow{Pf_d} \] 
+       \end{solution}
+
+       \item Donner la relation de la statique des fluides imcompressibles. \par
+       \begin{solution}
+          \[ P + \rho g z = cste\]
+        \end{solution}
+
+        \item Donner la relation de la statique des fluides imcompressibles en un point M à une profondeur H d'un fluide au contact d'un autre fluide de presssion $P_o$. \par
+        \begin{solution}
+           \[P(M) = P_o + \rho g H\]
+           
+         \end{solution}
+
+         \item En quel point s'applique la poussée d'archimède $\pi_A$ ? \par
+         \begin{solution}
+            Au centre de poussée C
+          \end{solution}
+
+
+         \item Donner et expliquer les 3 méthodes pour calculer les forces de pressions \par
+         \begin{solution}
+            voir cours IV : Utilisation du poid, de la poussée d'archimède et par intégration directe
+          \end{solution}
+\end{enumerate}
+\end{document}
