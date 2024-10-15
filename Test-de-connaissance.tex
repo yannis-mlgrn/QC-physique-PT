@@ -1,0 +1,145 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{enumitem} 
+\usepackage{environ}  
+\usepackage{ifthen}   
+\usepackage{subfiles} 
+\usepackage[top=2cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\newboolean{showsolutions}
+
+% Définir un environnement pour les solutions
+\NewEnviron{solution}{
+    \ifthenelse{\boolean{showsolutions}}{
+        \noindent\textbf{Solution :} 
+        \BODY
+    }{}
+}
+\begin{document}
+% Affichage des questions de cours
+\section*{\centering\huge Chapitre B1 : Le champ electrostatique}
+\setboolean{showsolutions}{False}
+\begin{enumerate}[label=\arabic{enumi} - , left=0pt, itemsep=1em]
+    \item Donner l'expression de la charge en fonction de la densité volumique de charge $\rho$. \par
+    \begin{solution}
+          \[ dq = \rho \times d\tau \] et \[ q = \int_\tau dq = \int_\tau \rho \times d\tau \]
+    \end{solution}
+    \item Donner l'expression de la charge lors d'une distribution surfacique de charge $\sigma $. \par
+    \begin{solution}
+          \[ dq = \sigma \times dS \] et \[ q = \int_S \sigma \times dS \]
+          $\sigma$ en $C.m^{-2}$
+    \end{solution}
+    \item Enoncer l'expression la loi de Coulomb. \par
+    \begin{solution}
+          \[ \overrightarrow{F_{P \to M}} = \frac{1}{4 \pi \epsilon_o} \times \frac{q_pq}{PM^2} \]
+          Accompagné de son schéma II.1
+
+           $\epsilon_o$ : perméabilité diélectrique du vide en $F.m^{-1}$
+    \end{solution}
+    \item Donner l'expression du champ electrostatique $\vec{E}$. \par
+    \begin{solution}
+          Le champs $\vec{E}$ au point M est tel que si on y place une charge q, elle serait soumise à une force electrostatique.
+    \end{solution}
+    \item Donner l'expression de la force electrostatique. \par
+    \begin{solution}
+          \[ \vec{F} = q \times E(M)\]
+    \end{solution}
+    \item Donner l'expression du champ electrostatique créé par la charge potencielle $q_p$ en P au point M. \par
+    \begin{solution}
+          \[ \vec{E(M)} = \frac{1}{4 \pi \epsilon_o} \times \frac{q_p}{PM^2} \cdot \vec{u_{PM}} \]
+    \end{solution}
+    \item Donner l'expression du champ electrostatique créé par une charge $q_p$ en P au point M grâce à une distribution continue de charge. \par
+    \begin{solution}
+          \[ \vec{E(M)} = \int_{P \epsilon distrib} d\vec{E(M)} = \frac{1}{4 \pi \epsilon_o} \int_{P \epsilon distrib} \frac{dq(P)}{PM^2} \cdot \vec{u_{PM}} \]
+          avec : 
+          \[ \int_{P \epsilon distrib} dq(P)  = \int_\tau \rho(P) \times d\tau =\int_S \sigma(P) \times dS = \int_L \lambda(P) \times dl \]   
+  
+    \end{solution}
+    \item Donner le domaine de définition du champ $\vec{E(M)}$ suivant les distributions. \par
+    \begin{solution}
+     $\vec{E(M)}$ est défini partout pour une distribution volumique mais n'est pas défini sur les autres distributions (surfacique, volumique)
+  
+    \end{solution}
+    \item Donner la valeur du champ d'ionisation de l'air. \par
+    \begin{solution}
+     36kV.$cm^{-1}$
+  
+    \end{solution}
+        \item Enoncer le principe de Curie. \par
+    \begin{solution}
+     Les effets sont au moins aussi symétrique que les causes
+     \end{solution}
+     \item Donner la définition de ligne de champs \par
+     \begin{solution}
+      ligne orienté tangent au champ à chacun de ses points
+     \end{solution}
+     \item Donner la définition de tube de champs \par
+     \begin{solution}
+      Ensemble des lignes de champ qui s'appuient sur un contour fermé 
+     \end{solution}
+\end{enumerate}
+\newpage
+\section*{\centering\huge Réponses :}
+\setboolean{showsolutions}{True}
+\begin{enumerate}[label=\arabic{enumi} - , left=0pt, itemsep=1em]
+    \item Donner l'expression de la charge en fonction de la densité volumique de charge $\rho$. \par
+    \begin{solution}
+          \[ dq = \rho \times d\tau \] et \[ q = \int_\tau dq = \int_\tau \rho \times d\tau \]
+    \end{solution}
+    \item Donner l'expression de la charge lors d'une distribution surfacique de charge $\sigma $. \par
+    \begin{solution}
+          \[ dq = \sigma \times dS \] et \[ q = \int_S \sigma \times dS \]
+          $\sigma$ en $C.m^{-2}$
+    \end{solution}
+    \item Enoncer l'expression la loi de Coulomb. \par
+    \begin{solution}
+          \[ \overrightarrow{F_{P \to M}} = \frac{1}{4 \pi \epsilon_o} \times \frac{q_pq}{PM^2} \]
+          Accompagné de son schéma II.1
+
+           $\epsilon_o$ : perméabilité diélectrique du vide en $F.m^{-1}$
+    \end{solution}
+    \item Donner l'expression du champ electrostatique $\vec{E}$. \par
+    \begin{solution}
+          Le champs $\vec{E}$ au point M est tel que si on y place une charge q, elle serait soumise à une force electrostatique.
+    \end{solution}
+    \item Donner l'expression de la force electrostatique. \par
+    \begin{solution}
+          \[ \vec{F} = q \times E(M)\]
+    \end{solution}
+    \item Donner l'expression du champ electrostatique créé par la charge potencielle $q_p$ en P au point M. \par
+    \begin{solution}
+          \[ \vec{E(M)} = \frac{1}{4 \pi \epsilon_o} \times \frac{q_p}{PM^2} \cdot \vec{u_{PM}} \]
+    \end{solution}
+    \item Donner l'expression du champ electrostatique créé par une charge $q_p$ en P au point M grâce à une distribution continue de charge. \par
+    \begin{solution}
+          \[ \vec{E(M)} = \int_{P \epsilon distrib} d\vec{E(M)} = \frac{1}{4 \pi \epsilon_o} \int_{P \epsilon distrib} \frac{dq(P)}{PM^2} \cdot \vec{u_{PM}} \]
+          avec : 
+          \[ \int_{P \epsilon distrib} dq(P)  = \int_\tau \rho(P) \times d\tau =\int_S \sigma(P) \times dS = \int_L \lambda(P) \times dl \]   
+  
+    \end{solution}
+    \item Donner le domaine de définition du champ $\vec{E(M)}$ suivant les distributions. \par
+    \begin{solution}
+     $\vec{E(M)}$ est défini partout pour une distribution volumique mais n'est pas défini sur les autres distributions (surfacique, volumique)
+  
+    \end{solution}
+    \item Donner la valeur du champ d'ionisation de l'air. \par
+    \begin{solution}
+     36kV.$cm^{-1}$
+  
+    \end{solution}
+        \item Enoncer le principe de Curie. \par
+    \begin{solution}
+     Les effets sont au moins aussi symétrique que les causes
+     \end{solution}
+     \item Donner la définition de ligne de champs \par
+     \begin{solution}
+      ligne orienté tangent au champ à chacun de ses points
+     \end{solution}
+     \item Donner la définition de tube de champs \par
+     \begin{solution}
+      Ensemble des lignes de champ qui s'appuient sur un contour fermé 
+     \end{solution}
+\end{enumerate}
+\end{document}

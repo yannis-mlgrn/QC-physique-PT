@@ -5,3 +5,5 @@
 - Pour modifier l'affichage des solutions, il suffit de modifier le boolean `\setboolean{showsolutions}{True}`
 - Ouvert aux contributions :)
 
+
+#latex_filenames = ["Cours/PartieB/CHAPB1-Le_champ_electrostatique.tex", "Cours/PartieB/CHAPB4-Le_champ_magnetostatique.tex"]  # Remplacez par les chemins vers vos fichiers .tex
