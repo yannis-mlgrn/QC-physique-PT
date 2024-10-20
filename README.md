@@ -37,7 +37,7 @@ python generateurEvalCours.py -f fichier.tex -nq nombre-de-questions
 ```
 exemple : 
 ```bash
-python generateurEvalCours.py -f Cours/PartieC/CHAPC1-Statique_des_fluides.tex -nq 4
+python generateurEvalCours.py -f ../Cours/PartieC/CHAPC1-Statique_des_fluides.tex -nq 4
 ```
 sinon lancer le programme avec l'argument --help
 
