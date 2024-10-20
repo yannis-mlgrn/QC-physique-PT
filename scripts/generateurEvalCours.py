@@ -53,7 +53,7 @@ def create_and_build_latex(latex_filenames, num_questions=None):
 \end{{document}}
 """
 
-    filename = "Test-de-connaissance.tex"
+    filename = "../Output/Test-de-connaissance.tex"
     
     # Créer le fichier LaTeX
     with open(filename, "w") as f:
@@ -94,12 +94,13 @@ def extract_questions(latex_code_input):
     return questions
 
 def build_latex(filename: str):
+    output_directory = '../Output/'
     try:
         # Compiler le fichier LaTeX avec pdflatex
-        subprocess.run(["pdflatex", "-interaction=nonstopmode", filename], check=True)
+        subprocess.run(["pdflatex", "-interaction=nonstopmode", "-output-directory",output_directory, filename], check=True)
         
         # Si le fichier contient des sous-fichiers, il est recommandé de relancer la compilation
-        subprocess.run(["pdflatex", "-interaction=nonstopmode", filename], check=True)
+        subprocess.run(["pdflatex", "-interaction=nonstopmode", "-output-directory", output_directory, filename], check=True)
         
         print(f"Compilation de {filename} terminée avec succès.")
     except subprocess.CalledProcessError:

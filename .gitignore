@@ -1,6 +1,8 @@
 # Fichiers LaTeX générés
-QCphysique.aux
-QCphysique.fdb_latexmk
-QCphysique.fls
-QCphysique.log
-QCphysique.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+Test-de-connaissance.pdf
+Test-de-connaissance.tex
