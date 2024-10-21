@@ -1,0 +1,28 @@
+\section*{\centering Chapitre A1 : Stabilité des systèmes linéaires}
+\begin{enumerate}[label=\arabic{enumi} - , left=0pt, itemsep=1em] % Personnalisation de la numérotation
+    \item Donner la définition d'un système linéaire. \par
+    \begin{solution}
+          un système linéaire vérifie le principe de superposition
+    \end{solution}
+
+    \item Donner la fonction de transfert opérationnelle et harmonique d'un système linéaire. \par
+    \begin{solution}
+          \[ H(P) = \frac{N_o + N_1p + N_2P^2 + ... }{D_o + D_1p + D_2P^2 + ... }\]
+          \[ H(jw) = \frac{N_o + N_1jw + N_2jw^2 + ... }{D_o + D_1jw + D_2jw^2 + ... }\]
+    \end{solution}
+
+    \item Donner l'equation différentielle d'un système linéaire. \par
+    \begin{solution}
+          \[ D_os+D_1 \frac{ds}{dt} + D_2 \frac{ds^2}{dt^2} + ... = N_oe + N_1\frac{de}{dt} + N_2\frac{de^2}{dt^2}\]
+    \end{solution}
+
+    \item Donner la définition du principe de stabilité. \par
+    \begin{solution}
+        Un système linéaire est stable si le signal de sortie ne diverge pas si on injecte un signal d'entrée borné
+    \end{solution}
+
+    \item Donner la condition de stabilité d'un système linéaire ( grâce à sa fonction de transfert). \par
+    \begin{solution}
+        Un système linéaire est stable si $D_o$, $D_1$ et $D_2$ sont de même signe, quelque soit le signe de  $\Delta$
+    \end{solution}
+\end{enumerate}

@@ -8,6 +8,7 @@
 \usepackage{ifthen}   
 \usepackage{subfiles} 
 \usepackage[top=2cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{tikz}
 \newboolean{showsolutions}
 \setboolean{showsolutions}{True}
 
@@ -27,9 +28,16 @@
 \newpage
 
 %Affichage des questions de cours
+\section*{\centering\huge Partie A : Electronique}
+\subfile{../Cours/PartieA/CHAPA1-Stabilite_des_systemes_lineaires.tex}
+\subfile{../Cours/PartieA/CHAPA2-Retroaction.tex}
+
+\subfile{../Cours/PartieA/CHAPA3-Oscillateurs.tex}
 % Partie B 
 \section*{\centering\huge Partie B : Electronique et electromagnétisme} 
 \subfile{../Cours/PartieB/CHAPB1-Le_champ_electrostatique}
+\subfile{../Cours/PartieB/CHAPB2-Circulation _du_champ_electrostatique.tex}
+\subfile{../Cours/PartieB/CHAPB3-Flux_du_champ_electrostatique.tex}
 \subfile{../Cours/PartieB/CHAPB4-Le_champ_magnetostatique}
 % Partie C
 \section*{\centering\huge Partie C : Thermodynamique et mécanique des fluides appliquées aux machines thermiques}

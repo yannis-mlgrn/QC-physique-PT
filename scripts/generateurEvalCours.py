@@ -12,12 +12,16 @@ def create_and_build_latex(latex_filenames, num_questions=None):
             latex_code_input += f.read() + "\n"
 
     questions = extract_questions(latex_code_input)
-    chapter_title = extract_title(latex_code_input)
+    if len(latex_filenames) == 1 :
+        chapter_title = extract_title(latex_code_input)
+    else :
+        chapter_title = "Révisions de cours"
     
     if num_questions is None or num_questions > len(questions):
         num_questions = len(questions)
     random_questions = random.sample(questions, num_questions) if num_questions < len(questions) else questions
     
+
     latex_code = rf"""
 \documentclass{{article}}
 \usepackage[utf8]{{inputenc}}
