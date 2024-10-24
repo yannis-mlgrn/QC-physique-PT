@@ -5,6 +5,8 @@
 
 ## Utilisation des scripts de générations de contrôles de connaissances :
 
+[![asciicast](https://asciinema.org/a/yw2EpXNyPxp25WqnRRSoDQnsj.svg)](https://asciinema.org/a/yw2EpXNyPxp25WqnRRSoDQnsj)
+
 ### 1- Installation :
 **Prérequis : Vous devez avoir installé  [pdflatex](https://gist.github.com/rain1024/98dd5e2c6c8c28f9ea9d)**
 
