@@ -14,6 +14,8 @@ def chaptersChoice(_):
         "Chapitre B4 - Le champ magnétostatique",
         Separator(),
         "Chapitre C1 - Statique des fluides",
+        "Chapitre C2 - Les principes de la thermodynamique pour un système fermé",
+        "Chapitre C3 - Changement d'état des fluides réels pures",
     ]
 
 def main() :
@@ -41,6 +43,9 @@ def createListPath(L: list) -> list:
         "Chapitre B3 - Flux du champ électrostatique": '../Cours/PartieB/CHAPB3-Flux_du_champ_electrostatique.tex',
         'Chapitre B4 - Le champ magnétostatique': '../Cours/PartieB/CHAPB4-Le_champ_magnetostatique.tex',
         'Chapitre C1 - Statique des fluides': '../Cours/PartieC/CHAPC1-Statique_des_fluides.tex',
+        'Chapitre C2 - Les principes de la thermodynamique pour un système fermé':'../Cours/PartieC/CHAPC2-Les_principes_thermodynamiques_pour_un_système_ferme.tex',
+        "Chapitre C3 - Changement d'état des fluides réels pures":'../Cours/PartieC/CHAPC3-Changement_detat_des_fluides_reels_pures.tex',
+
     }
     return [chapter_paths[chapter] for chapter in L if chapter in chapter_paths]
 

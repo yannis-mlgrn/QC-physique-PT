@@ -1,0 +1,126 @@
+\section*{\centering Chapitre C2 : Les principes de la thermodynamique pour un système fermé} 
+\begin{enumerate}[label=\arabic{enumi} - , left=0pt, itemsep=1em] % Personnalisation de la numérotation
+    \item Énoncer le premier principe (def et formule). \par
+    \begin{solution}
+     \[ \Delta E_m + \Delta U = W + Q\]\\
+     Le premier principe est le principe de conservation de l'énergie.
+    \end{solution}
+
+    \item Donner la définition de W et Q. \par
+    \begin{solution}\\
+        W : travail = transfert ordonné d'énergie \\
+        Q : transfert thermique désordonné de l'énergie
+    \end{solution}
+
+    \item Donner l'expression differentielle du premier principe. \par
+    \begin{solution}
+        \[ dE_m + dU = \delta W + \delta Q \]
+    \end{solution}
+
+    \item Donner l'expression du second principe pour une transformation finie. \par
+    \begin{solution}
+        $\Delta S = S_{echangee} + S_{cree}$ avec $ S_{echangee} = \frac{Q_{\epsilon}}{T_{\epsilon}}$ \\
+        $\Delta S_{cree} = 0$ pour une transformation réversible \\
+        $\Delta S_{cree} > 0$ pour une transformation irréversible
+
+    \end{solution}
+
+    \item Donner l'expression differentielle du second principe pour une transformation finie. \par
+    \begin{solution}
+        $ dS = \delta S_{echangee} + \delta S_{cree}$ avec $ \delta S_{echangee} = \frac{\delta Q}{T_{ext}}$ \\
+        $\delta Q$ : transfert thermique reçue par le système de la part du milieu exterieur. \\
+        $T_{ext}$ : température de la frontière avec le milieu extérieur où à lieu le transfert thermique.
+    \end{solution}
+
+    \item Donner les causes d'irréversibilités \par
+    \begin{solution}
+        - frottements \\
+        - inhomogénité de P $\rightarrow$ diffusion de particules \\
+        - inhomogénité de T $\rightarrow$ diffusion thermique \\
+        - transformation chimiques
+    \end{solution}
+
+    \item Donner l'expression de la température thermodynamique \par
+    \begin{solution}
+        \[ T = (\frac{\partial U}{\partial S})_V\]
+    \end{solution}
+
+    \item Donner l'expression de la pression thermodynamique \par
+    \begin{solution}
+        \[ P = (\frac{\partial U}{\partial V})_S\]
+    \end{solution}
+
+    \item Donner les identités thermodynamiques\par
+    \begin{solution}
+        \[ dU = Tds - PdV\]
+        \[ dh = Tds - VdP\]
+    \end{solution}
+
+    \item Donner l'expression de dS en utilisant la loi des Gaz Parfaits en fonction de T et V \par
+    \begin{solution}
+        \[ dS = C_v \frac{dT}{T} + nR\frac{dV}{V}\]
+    \end{solution}
+
+    \item Donner l'expression de dS en utilisant la loi des Gaz Parfaits en fonction de T et P \par
+    \begin{solution}
+        \[ dS = C_p \frac{dT}{T} - nR\frac{dP}{P}\]
+    \end{solution}
+    
+    \item Donner l'expression de dS en utilisant la loi des Gaz Parfaits en fonction de P et V \par
+    \begin{solution}
+        \[ dS = C_p \frac{dV}{V} + C_v\frac{dP}{P}\]
+    \end{solution}
+
+    \item Donner la définition de l'enthalpie H (formule)\par
+    \begin{solution}
+        \[ H= U + PV\]
+    \end{solution}
+
+    \item Donner l'expression' de l'enthalpie H pour une transformation isobare\par
+    \begin{solution}
+        \[  \Delta H = Q\]
+    \end{solution}
+
+    \item Donner la définition de l'enthalpie libre\par
+    \begin{solution}
+        \[ G = U + PV - TS\]
+        G est une fonction d'état extensive. C'est le potentiel thermodynamique isobare et isotherme
+    \end{solution}
+
+    \item Donner l'expression de la variation de l'enthalpie libre\par
+    \begin{solution}
+       \[ dG = VdP - SdT \]
+    \end{solution}
+
+    \item Donner l'expression du potenciel chimique $\nu_i$\par
+    \begin{solution}
+       \[ \nu_i = (\frac{\partial G}{\partial n_i})_{T,P,n_j} = G_{n_i}\] 
+       et comme G est extensive : $ G = \sum_{i}^{} n_i G_i = \sum_{i}^{} n_i \nu_i$ 
+    \end{solution}
+
+    \item Donner les expressions des identités thermodynamiques en fonction du potenciel chimique\par
+    \begin{solution}
+        \[ dU = -PdV + TdS + \sum_{i}^{} \nu_i dn_i\]
+        \[ dH = VdP + TdS + \sum_{i}^{} \nu_i dn_i\]
+        \[ dG = VdP - SdT + \sum_{i}^{} \nu_i dn_i\]
+    \end{solution}
+
+    \item Donner les expressions massiques des identités thermodynamiques en fonction du potenciel chimique\par
+    \begin{solution}
+        \[ du = -Pdv + Tdv + \sum_{i}^{} \frac{\nu_i}{M_i} dx_i\]
+        \[ dh = vdP + Tds + \sum_{i}^{} \frac{\nu_i}{M_i} dx_i\]
+        \[ dg = vdP - sdT + \sum_{i}^{} \frac{\nu_i}{M_i} dx_i\]
+    \end{solution}
+
+    \item Donner les expressions massiques du second principe\par
+    \begin{solution}
+        \[ ds = \delta s_{ech} + \delta s_{cree}\] avec $\delta s_{ech} = \frac{q}{Text}$ et $ \delta s_{cree} >= 0$
+        \[ \Delta s =  s_{ech} + s_{cree}\] avec $\delta s_{ech} = \frac{q}{Text}$ et $ \delta s_{cree} >= 0$
+    \end{solution}
+
+    \item Donner les expressions massiques du premier principe\par
+    \begin{solution}
+        \[ du = de_m = \delta w + \delta q \]
+        \[ \Delta u + \Delta e_m = w + q\]
+    \end{solution}
+\end{enumerate}
